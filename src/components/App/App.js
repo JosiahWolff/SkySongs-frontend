@@ -14,7 +14,7 @@ import {
 
 import { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import { getAccessToken, searchTracks } from "../../utils/SpotifyApi"; // Import searchTracks directly
+import { getAccessToken, searchTracks } from "../../utils/SpotifyApi";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");

@@ -23,19 +23,18 @@ function Main({ weatherTemp, onSelectCard, getAccessToken }) {
 
   const handleSearch = async () => {
     try {
-      // Fetch access token
       const accessToken = await getAccessToken();
 
       let seedTracks = "";
       if (weatherType === "sunny") {
-        seedTracks = "4NHQUGzhtTLFvgF5SZesLK,0c6xIDDpzE81m2q797ordA"; // Example seed tracks
+        seedTracks = "4NHQUGzhtTLFvgF5SZesLK,0c6xIDDpzE81m2q797ordA";
       } else if (weatherType === "rainy") {
-        seedTracks = "0c6xIDDpzE81m2q797ordA,3FmRBtcYgOJ06u5QFLzI1g"; // Example seed tracks
+        seedTracks = "0c6xIDDpzE81m2q797ordA,3FmRBtcYgOJ06u5QFLzI1g";
       } else {
-        seedTracks = "3FmRBtcYgOJ06u5QFLzI1g,4NHQUGzhtTLFvgF5SZesLK"; // Example seed tracks
+        seedTracks = "3FmRBtcYgOJ06u5QFLzI1g,4NHQUGzhtTLFvgF5SZesLK";
       }
       const response = await fetch(
-        `https://api.spotify.com/v1/recommendations?seed_tracks=${seedTracks}&limit=15`, // Using seed tracks
+        `https://api.spotify.com/v1/recommendations?seed_tracks=${seedTracks}&limit=15`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,
@@ -43,17 +42,14 @@ function Main({ weatherTemp, onSelectCard, getAccessToken }) {
         }
       );
 
-      // Check if the response is OK
       if (!response.ok) {
         throw new Error(
           `Failed to fetch recommendations: ${response.status} ${response.statusText}`
         );
       }
 
-      // Parse response JSON
       const data = await response.json();
 
-      // Update the state with the received recommendations
       setSongs(data.tracks);
     } catch (error) {
       console.error("Error fetching recommendations:", error);

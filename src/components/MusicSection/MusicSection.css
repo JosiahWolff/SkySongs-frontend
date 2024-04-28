@@ -1,0 +1,10 @@
+.music__section {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 15px;
+  row-gap: 0px;
+  justify-content: flex-start; /* Align items to start */
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}

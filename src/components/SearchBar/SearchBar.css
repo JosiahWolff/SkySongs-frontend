@@ -1,0 +1,43 @@
+.search__input {
+  border: none;
+  border-bottom: 1px solid #000;
+  height: 24px;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+  outline: none;
+}
+
+.spotify__search-title {
+  margin-bottom: 10px;
+}
+
+.search__submit {
+  display: flex;
+  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
+  margin-top: 32px;
+  width: 80px;
+  height: 32px;
+  font-weight: 700;
+  border: 4px solid #000;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  transition: opacity 0.2s ease-in-out;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__submit:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  border: rgb(0, 0, 0);
+  background-color: lightgreen;
+}
+
+.search__buttontxt {
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

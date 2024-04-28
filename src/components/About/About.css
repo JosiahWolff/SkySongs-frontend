@@ -1,0 +1,48 @@
+@import url(../../Vendor/fonts.css);
+@import url(../../Vendor/normalize.css);
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_info {
+  margin: 5px;
+}
+
+.author_section {
+  order: 1;
+  width: 55%;
+  background-color: white;
+  border-radius: 15px;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.about_section {
+  order: 2;
+  width: 55%;
+  background-color: white;
+  border-radius: 15px;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.author_info {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.about_text {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  margin: 40px 10px 5px 10px;
+}
+
+.author_text {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  margin: 40px 10px 5px 10px;
+}

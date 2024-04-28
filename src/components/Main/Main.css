@@ -1,0 +1,22 @@
+.main__section {
+  margin: 0 20px 0 20px;
+}
+
+.main__button {
+  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
+  display: flex;
+  height: 32px;
+  font-weight: 700;
+  border: 4px solid #000;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.main__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  border: rgb(0, 0, 0);
+  background-color: cornflowerblue;
+}

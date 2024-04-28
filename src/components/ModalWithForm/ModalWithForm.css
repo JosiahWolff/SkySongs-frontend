@@ -1,0 +1,235 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+  position: relative;
+  background-color: white;
+  max-width: 496px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 28px 30px 36px 28px;
+}
+
+.modal__title {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 28px 28px 0 0;
+  margin: 0 0 24px 0;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 99%;
+  margin: 0 0 24px 0;
+}
+
+.modal__input-title {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 8px 0;
+}
+
+.modal__label {
+  width: 440px;
+  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.modal__login {
+  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
+  position: absolute;
+  bottom: 38px;
+  left: 165px;
+  border: none;
+  line-height: 20px;
+  size: 16px;
+  font-weight: 700;
+  background-color: white;
+  color: #000;
+  opacity: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal__login:hover {
+  opacity: 100%;
+}
+
+.modal__image {
+  max-width: 498px;
+  max-height: 610px;
+}
+
+.modal__preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.modal__card_name {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.modal__card_weather {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.modal__card_valence {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.modal__card_info {
+  background-color: white;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 466px;
+}
+
+.modal__close-button {
+  background-color: #fff;
+  background-image: url("../../images/close.svg");
+  border: none;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 22px;
+  right: 30px;
+}
+
+.modal__close-button:hover {
+  cursor: pointer;
+}
+
+.close__button {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background-image: url("../../images/close-preview.svg");
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.radio__dot {
+  accent-color: black;
+}
+
+.radio__dot:checked + label {
+  opacity: 1;
+}
+
+.weather__group {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.weather__list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.weather__type {
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.weather__type:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.weather__name {
+  margin-left: 10px;
+  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.5;
+}
+
+.modal__submit {
+  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
+  margin-top: 32px;
+  width: 124px;
+  height: 32px;
+  font-weight: 700;
+  border: 4px solid #000;
+  border-radius: 4px;
+  color: #fff;
+  background-color: black;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.modal__submit:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  border: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+.modal__submit_disabled {
+  opacity: 0.3;
+}

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/SkySongs-frontend/static/css/main.f0a93b67.css",
+    "main.js": "/SkySongs-frontend/static/js/main.c8a394ac.js",
+    "static/js/453.e9448bae.chunk.js": "/SkySongs-frontend/static/js/453.e9448bae.chunk.js",
+    "static/media/SpotifyLogo.png": "/SkySongs-frontend/static/media/SpotifyLogo.15ede3c7a060963ff80f.png",
+    "static/media/CabinetGrotesk-Medium.ttf": "/SkySongs-frontend/static/media/CabinetGrotesk-Medium.06e4535179580983658a.ttf",
+    "static/media/CabinetGrotesk-Bold.ttf": "/SkySongs-frontend/static/media/CabinetGrotesk-Bold.049721aa3e601711db60.ttf",
+    "static/media/logo.png": "/SkySongs-frontend/static/media/logo.57a17934991dd821fb64.png",
+    "static/media/CabinetGrotesk-Bold.woff": "/SkySongs-frontend/static/media/CabinetGrotesk-Bold.0fb1cbec860aa3537c32.woff",
+    "static/media/CabinetGrotesk-Medium.woff": "/SkySongs-frontend/static/media/CabinetGrotesk-Medium.1928499875b5b3682ea5.woff",
+    "static/media/CabinetGrotesk-Bold.woff2": "/SkySongs-frontend/static/media/CabinetGrotesk-Bold.c9c3bc30c44ade9d3b9b.woff2",
+    "static/media/CabinetGrotesk-Medium.woff2": "/SkySongs-frontend/static/media/CabinetGrotesk-Medium.467bcdaa2530ea758403.woff2",
+    "static/media/close.svg": "/SkySongs-frontend/static/media/close.41654df85174806f9922.svg",
+    "index.html": "/SkySongs-frontend/index.html",
+    "static/media/close-preview.svg": "/SkySongs-frontend/static/media/close-preview.039cadb13035f85d27f8.svg",
+    "main.f0a93b67.css.map": "/SkySongs-frontend/static/css/main.f0a93b67.css.map",
+    "main.c8a394ac.js.map": "/SkySongs-frontend/static/js/main.c8a394ac.js.map",
+    "453.e9448bae.chunk.js.map": "/SkySongs-frontend/static/js/453.e9448bae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0a93b67.css",
+    "static/js/main.c8a394ac.js"
+  ]
+}

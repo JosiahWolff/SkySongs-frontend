@@ -4,8 +4,8 @@ const SongCard = ({ item, onSelectCard }) => {
   const imageUrl = item.album.images.length > 0 ? item.album.images[0].url : "";
 
   return (
-    <div>
-      <div className="card_name">{item.name}</div>
+    <div className="card">
+      <span className="card_name">{item.name}</span>
       <img
         src={imageUrl}
         className="card_image"

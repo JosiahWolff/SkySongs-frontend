@@ -15,7 +15,6 @@
   background-color: white;
   max-width: 496px;
   border-radius: 20px;
-  overflow: hidden;
   padding: 28px 30px 36px 28px;
 }
 
@@ -78,30 +77,6 @@
   opacity: 100%;
 }
 
-.modal__image {
-  max-width: 498px;
-  max-height: 610px;
-}
-
-.modal__preview {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: 16px;
-}
-
-.modal__card_name {
-  margin-top: 20px;
-  margin-bottom: 0;
-  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
 .modal__card_weather {
   margin-top: 12px;
   margin-bottom: 0;
@@ -111,27 +86,6 @@
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-}
-
-.modal__card_valence {
-  margin-top: 50px;
-  margin-bottom: 0;
-  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.modal__card_info {
-  background-color: white;
-  padding-left: 32px;
-  padding-bottom: 32px;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  max-width: 466px;
 }
 
 .modal__close-button {

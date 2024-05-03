@@ -3,7 +3,7 @@ import Header from "../Header/Header";
 import SearchSpotify from "../SearchSpotify/SearchSpotify";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
-import SongModal from "../SongModal/SongModal";
+import SongPreview from "../SongPreview/SongPreview";
 import About from "../About/About";
 
 import {
@@ -23,7 +23,7 @@ function App() {
   const [location, setLocation] = useState("");
   const [songs, setSongs] = useState([]);
 
-  function handleOpenSongModal() {
+  function handleOpenSongPreview() {
     setActiveModal("preview");
   }
 
@@ -37,15 +37,12 @@ function App() {
 
   useEffect(() => {
     if (!activeModal) return;
-
     const handleEscClose = (e) => {
       if (e.key === "Escape") {
         handleCloseModal();
       }
     };
-
     document.addEventListener("keydown", handleEscClose);
-
     return () => {
       document.removeEventListener("keydown", handleEscClose);
     };
@@ -80,7 +77,7 @@ function App() {
             weatherTemp={temp}
             onSelectCard={handleSelectedCard}
             songs={songs}
-            handleOpenSongModal={handleOpenSongModal}
+            handleOpenSongPreview={handleOpenSongPreview}
             getAccessToken={getAccessToken}
           />
         </Route>
@@ -90,7 +87,7 @@ function App() {
             onSelectCard={handleSelectedCard}
             songs={songs}
             onCreateModal={handleCreateModal}
-            handleOpenSongModal={handleOpenSongModal}
+            handleOpenSongPreview={handleOpenSongPreview}
           />
         </Route>
 
@@ -102,7 +99,7 @@ function App() {
       <Footer />
 
       {activeModal === "preview" && (
-        <SongModal selectedCard={selectedCard} onClose={handleCloseModal} />
+        <SongPreview selectedCard={selectedCard} onClose={handleCloseModal} />
       )}
     </div>
   );

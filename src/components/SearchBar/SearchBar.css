@@ -1,3 +1,29 @@
+.search {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 67px;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  white-space: nowrap;
+}
+
+.search__logo {
+  width: 75px;
+  height: 56px;
+}
+
+.search__title {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 0 10px 0;
+}
+
 .search__input {
   border: none;
   border-bottom: 1px solid #000;
@@ -5,10 +31,6 @@
   margin: 0 0 10px 0;
   border-radius: 5px;
   outline: none;
-}
-
-.spotify__search-title {
-  margin-bottom: 10px;
 }
 
 .search__submit {
@@ -40,4 +62,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    max-width: 320px;
+    max-height: 50px;
+  }
+  .search__container {
+    padding-top: 50px;
+  }
 }

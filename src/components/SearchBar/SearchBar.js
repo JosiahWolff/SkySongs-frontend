@@ -5,6 +5,7 @@ import { getAccessToken, searchTracks } from "../../utils/SpotifyApi";
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
+  const [error, setError] = useState(null);
 
   const handleInputChange = (event) => {
     setQuery(event.target.value);
@@ -16,21 +17,19 @@ const SearchBar = ({ onSearch }) => {
       const accessToken = await getAccessToken();
       const tracks = await searchTracks(accessToken, query);
       onSearch(tracks);
+      setError(null);
     } catch (error) {
       console.error("Error searching for tracks:", error);
+      setError(error.message);
     }
   };
 
   return (
-    <div className="spotify__info">
-      <div className="spotify__info-container">
-        <img
-          className="spotify__avatar"
-          src={spotifyLogo}
-          alt="spotify avatar"
-        />
-        <div className="searchbar__search">
-          <p className="spotify__search-title">Search Songs</p>
+    <div className="search">
+      <div className="search__container">
+        <img className="search__logo" src={spotifyLogo} alt="spotify avatar" />
+        <div className="search__searchbar">
+          <p className="search__title">Search Songs</p>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -47,6 +46,7 @@ const SearchBar = ({ onSearch }) => {
               <p className="search__buttontxt">Search</p>
             </button>
           </form>
+          {error && <p className="error__message">{error}</p>}
         </div>
       </div>
     </div>

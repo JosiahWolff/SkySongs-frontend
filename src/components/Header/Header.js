@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.svg";
 import headerTitle from "../../images/headerTitle.png";
 import { Link } from "react-router-dom";
 
@@ -37,16 +37,16 @@ function Header() {
       <img className="header__title" src={headerTitle} alt="header Title" />
 
       <div className="header__section">
-        <div className="dropdown">
+        <nav className="dropdown">
           <button onClick={toggleDropdown} className="header__dropdown">
-            <p className="dropdown_btntext">Nav</p>
+            <p className="dropdown__btntext">Nav</p>
           </button>
           <div className={`dropdown-content ${dropdownOpen ? "show" : ""}`}>
             <Link to="/About">About</Link>
             <Link to="/SearchSpotify">Search</Link>
             <Link to="/">Home</Link>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
   );

@@ -6,6 +6,7 @@
   margin: 0 40px;
   display: flex;
   padding: 20px 0 0 0;
+  flex-wrap: wrap;
 }
 
 .spotify__items-container {
@@ -41,32 +42,22 @@
   cursor: pointer;
 }
 
-.spotify__info {
-  display: flex;
-  align-items: flex-start;
-  margin-right: 67px;
-}
-
-.spotify__info-container {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  white-space: nowrap;
-}
-
 .spotify__items {
   row-gap: 20px;
 }
 
-.spotify__avatar {
-  width: 75px;
-  height: 56px;
-}
+@media screen and (max-width: 700px) {
+  .spotify {
+    margin: 0px;
+    max-width: 180px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .spotify__container {
+    margin-top: 20px;
+  }
 
-.spotify__search-title {
-  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 20px;
-  line-height: 25px;
-  margin: 0;
+  .spotify__items-container {
+    margin-top: 150px;
+  }
 }

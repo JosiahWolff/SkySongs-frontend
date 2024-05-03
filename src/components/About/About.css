@@ -10,11 +10,15 @@
   justify-content: space-between;
 }
 
-.about_info {
+.about__website_info {
   margin: 5px;
 }
 
-.author_section {
+.about__title {
+  line-height: 45px;
+}
+
+.about__author_section {
   order: 1;
   width: 55%;
   background-color: white;
@@ -23,7 +27,7 @@
   font-size: 20px;
 }
 
-.about_section {
+.about__website_section {
   order: 2;
   width: 55%;
   background-color: white;
@@ -32,17 +36,30 @@
   font-size: 20px;
 }
 
-.author_info {
+.about__author_info {
   font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
 }
 
-.about_text {
+.about__website_text {
   font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
   margin: 40px 10px 5px 10px;
 }
 
-.author_text {
+.about__author_text {
   font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
   margin: 40px 10px 5px 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .about {
+    margin-top: 75px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .about__author_section,
+  .about__website_section {
+    width: 100%; /* Set width to 100% for full width */
+    margin-bottom: 20px; /* Add margin between sections */
+  }
 }

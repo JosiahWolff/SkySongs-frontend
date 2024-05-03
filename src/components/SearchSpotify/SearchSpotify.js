@@ -16,7 +16,7 @@ const SearchSpotify = ({ onCreateModal, onSelectCard }) => {
 
       <div className="spotify__items-container">
         <div className="spotify__clothing-header">
-          <div className="spotify__clothing-text">Your Songs</div>
+          <div className="spotify__clothing-text">Top 12 Results:</div>
         </div>
 
         <div className="spotify__items">

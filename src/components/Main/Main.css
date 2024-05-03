@@ -2,6 +2,14 @@
   margin: 0 20px 0 20px;
 }
 
+.main__description {
+  color: white;
+  margin: 30px 40px 20px 20px;
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+
 .main__button {
   font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
   display: flex;
@@ -19,4 +27,30 @@
   opacity: 0.6;
   border: rgb(0, 0, 0);
   background-color: cornflowerblue;
+}
+
+.main__card_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 0px;
+  justify-content: flex-start;
+  margin: 20px 0px 10px 50px;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .main__description {
+    padding-top: 50px;
+  }
+  .main__card_items {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  .card {
+    max-width: 280px;
+  }
 }

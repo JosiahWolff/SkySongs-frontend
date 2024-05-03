@@ -6,25 +6,9 @@ function Main({ weatherTemp, onSelectCard, getAccessToken }) {
   const [songs, setSongs] = useState([]);
   const [weatherType, setWeatherType] = useState("");
 
-  useEffect(() => {
-    const temperatureF = weatherTemp?.temperature?.F || 999;
-    let type = "";
-
-    if (temperatureF >= 70) {
-      type = "sunny";
-    } else if (temperatureF <= 65) {
-      type = "cold";
-    } else {
-      type = "rainy";
-    }
-
-    setWeatherType(type);
-  }, [weatherTemp]);
-
-  const handleSearch = async () => {
+  const handleFindSongs = async () => {
     try {
       const accessToken = await getAccessToken();
-
       let seedTracks = "";
       if (weatherType === "sunny") {
         seedTracks = "4NHQUGzhtTLFvgF5SZesLK,0c6xIDDpzE81m2q797ordA";
@@ -41,34 +25,50 @@ function Main({ weatherTemp, onSelectCard, getAccessToken }) {
           },
         }
       );
-
       if (!response.ok) {
         throw new Error(
           `Failed to fetch recommendations: ${response.status} ${response.statusText}`
         );
       }
-
       const data = await response.json();
-
       setSongs(data.tracks);
     } catch (error) {
-      console.error("Error fetching recommendations:", error);
+      error("Error fetching recommendations:", error);
     }
   };
 
-  const displaySongs = songs.slice(0, 10);
+  useEffect(() => {
+    const temperatureF = weatherTemp?.temperature?.F || 999;
+    let type = "";
+
+    if (temperatureF >= 70) {
+      type = "sunny";
+    } else if (temperatureF <= 65) {
+      type = "cold";
+    } else {
+      type = "rainy";
+    }
+
+    setWeatherType(type);
+  }, [weatherTemp]);
+
+  const displaySongs = songs.slice(0, 12);
 
   return (
-    <main>
+    <main className="main">
       <section className="main__section" id="clothing-card-section">
-        <p className="itemCard__description">
+        <p className="main__description">
           Today's weather is: {weatherType}
-          <button type="button" className="main__button" onClick={handleSearch}>
+          <button
+            type="button"
+            className="main__button"
+            onClick={handleFindSongs}
+          >
             Find Songs
           </button>
         </p>
 
-        <div className="card_items">
+        <div className="main__card_items">
           {displaySongs.map((item) => (
             <SongCard
               key={item.id}

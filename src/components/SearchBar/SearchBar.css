@@ -1,0 +1,75 @@
+.search {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 67px;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  white-space: nowrap;
+}
+
+.search__logo {
+  width: 75px;
+  height: 56px;
+}
+
+.search__title {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 0 10px 0;
+}
+
+.search__input {
+  border: none;
+  border-bottom: 1px solid #000;
+  height: 24px;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search__submit {
+  display: flex;
+  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
+  margin-top: 32px;
+  width: 80px;
+  height: 32px;
+  font-weight: 700;
+  border: 4px solid #000;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  transition: opacity 0.2s ease-in-out;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__submit:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  border: rgb(0, 0, 0);
+  background-color: lightgreen;
+}
+
+.search__buttontxt {
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    max-width: 320px;
+    max-height: 50px;
+  }
+  .search__container {
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,63 @@
+@import url(../../Vendor/fonts.css);
+
+@import url(../../Vendor/normalize.css);
+
+.spotify {
+  margin: 0 40px;
+  display: flex;
+  padding: 20px 0 0 0;
+  flex-wrap: wrap;
+}
+
+.spotify__items-container {
+  position: relative;
+  top: 15px;
+}
+
+.spotify__clothing-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 0 0 20px;
+}
+
+.spotify__clothing-text {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.spotify__add-button {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.spotify__add-button:hover {
+  cursor: pointer;
+}
+
+.spotify__items {
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .spotify {
+    margin: 0px;
+    max-width: 180px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .spotify__container {
+    margin-top: 20px;
+  }
+
+  .spotify__items-container {
+    margin-top: 150px;
+  }
+}

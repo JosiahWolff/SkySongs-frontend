@@ -1,0 +1,54 @@
+.preview {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.preview__song {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.preview__image {
+  max-width: 498px;
+  max-height: 610px;
+}
+
+.preview__card-info {
+  background-color: white;
+  padding-left: 32px;
+  padding-right: 0px;
+  padding-bottom: 32px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 466px;
+}
+
+.preview__card-name {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 555px) {
+  .preview__song {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+}

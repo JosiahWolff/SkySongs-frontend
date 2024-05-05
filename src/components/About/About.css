@@ -1,0 +1,65 @@
+@import url(../../Vendor/fonts.css);
+@import url(../../Vendor/normalize.css);
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__website_info {
+  margin: 5px;
+}
+
+.about__title {
+  line-height: 45px;
+}
+
+.about__author_section {
+  order: 1;
+  width: 55%;
+  background-color: white;
+  border-radius: 15px;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.about__website_section {
+  order: 2;
+  width: 55%;
+  background-color: white;
+  border-radius: 15px;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.about__author_info {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.about__website_text {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  margin: 40px 10px 5px 10px;
+}
+
+.about__author_text {
+  font-family: "CabinetGrotesk-Bold", Arial, Helvetica, sans-serif;
+  margin: 40px 10px 5px 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .about {
+    margin-top: 75px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .about__author_section,
+  .about__website_section {
+    width: 100%; /* Set width to 100% for full width */
+    margin-bottom: 20px; /* Add margin between sections */
+  }
+}

@@ -5,10 +5,10 @@ const SongCard = ({ item, onSelectCard }) => {
 
   return (
     <div className="card">
-      <span className="card_name">{item.name}</span>
+      <span className="card__name">{item.name}</span>
       <img
         src={imageUrl}
-        className="card_image"
+        className="card__image"
         onClick={() => onSelectCard(item)}
         alt={item.name}
       />

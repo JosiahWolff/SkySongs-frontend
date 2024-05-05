@@ -46,27 +46,27 @@ const SongPreview = ({ selectedCard, onClose }) => {
         <button
           type="button"
           onClick={onClose}
-          className="close__button"
+          className="preview__button"
         ></button>
         <img
           src={imageUrl}
           className="preview__image"
           alt={selectedCard.name}
         />
-        <div className="preview__card_info">
+        <div className="preview__card-info">
           <div>
-            <p className="preview__card_name">Song Name: {selectedCard.name}</p>
+            <p className="preview__card-name">Song Name: {selectedCard.name}</p>
             {selectedCard.artists && (
-              <p className="preview__card_name">
+              <p className="preview__card-name">
                 Artist: {selectedCard.artists[0].name}
               </p>
             )}
             {selectedCard.album && (
-              <p className="preview__card_name">
+              <p className="preview__card-name">
                 Album: {selectedCard.album.name}
               </p>
             )}
-            <p className="preview__card_name">
+            <p className="preview__card-name">
               Valence:{" "}
               {valence !== null ? `${Math.round(valence * 100)}%` : "N/A"}
             </p>

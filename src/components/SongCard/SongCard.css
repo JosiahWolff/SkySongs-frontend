@@ -1,4 +1,4 @@
-.card_name {
+.card__name {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -17,7 +17,7 @@
   border-radius: 4px;
 }
 
-.card_image {
+.card__image {
   min-width: 323px;
   max-width: 323px;
   width: 100%;
@@ -26,7 +26,7 @@
   border-radius: 19px;
 }
 
-.card_image:hover {
+.card__image:hover {
   cursor: pointer;
 }
 
@@ -46,14 +46,14 @@
     max-width: calc(100% - 38px);
     margin: auto;
   }
-  .card_image {
+  .card__image {
     max-width: 180px;
     min-width: 180px;
     max-height: 180px;
     min-height: 180px;
   }
 
-  .card_name {
+  .card__name {
     max-width: 180px;
   }
 }

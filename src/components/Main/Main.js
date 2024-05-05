@@ -68,7 +68,7 @@ function Main({ weatherTemp, onSelectCard, getAccessToken }) {
           </button>
         </p>
 
-        <div className="main__card_items">
+        <div className="main__card-items">
           {displaySongs.map((item) => (
             <SongCard
               key={item.id}

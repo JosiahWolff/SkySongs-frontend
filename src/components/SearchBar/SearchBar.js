@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
-import spotifyLogo from "../../images/SpotifyLogo.png";
+import spotifyLogo from "../../images/SpotifyLogo.svg";
 import { getAccessToken, searchTracks } from "../../utils/SpotifyApi";
 
 const SearchBar = ({ onSearch }) => {

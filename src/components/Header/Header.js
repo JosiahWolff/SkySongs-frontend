@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import logo from "../../images/logo.svg";
-import headerTitle from "../../images/headerTitle.png";
+import headerTitle from "../../images/headerTitle.svg";
 import { Link } from "react-router-dom";
 
 function Header() {

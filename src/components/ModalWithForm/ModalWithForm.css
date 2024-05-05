@@ -46,48 +46,6 @@
   margin: 0 0 8px 0;
 }
 
-.modal__label {
-  width: 440px;
-  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-bottom: 24px;
-}
-
-.modal__login {
-  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
-  position: absolute;
-  bottom: 38px;
-  left: 165px;
-  border: none;
-  line-height: 20px;
-  size: 16px;
-  font-weight: 700;
-  background-color: white;
-  color: #000;
-  opacity: 50%;
-  cursor: pointer;
-  padding: 0;
-}
-
-.modal__login:hover {
-  opacity: 100%;
-}
-
-.modal__card_weather {
-  margin-top: 12px;
-  margin-bottom: 0;
-  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
 .modal__close-button {
   background-color: #fff;
   background-image: url("../../images/close.svg");
@@ -103,7 +61,7 @@
   cursor: pointer;
 }
 
-.close__button {
+.preview__button {
   position: absolute;
   top: 20px;
   right: 28px;
@@ -115,53 +73,6 @@
   width: 16px;
   height: 16px;
   cursor: pointer;
-}
-
-.radio__dot {
-  accent-color: black;
-}
-
-.radio__dot:checked + label {
-  opacity: 1;
-}
-
-.weather__group {
-  margin-bottom: 12px;
-  margin-top: 0;
-  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.weather__list {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 32px;
-  margin-top: 0;
-}
-
-.weather__type {
-  margin-bottom: 8px;
-  margin-top: 0;
-}
-
-.weather__type:last-child {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.weather__name {
-  margin-left: 10px;
-  font-family: "CabinetGrotesk-Regular", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-  opacity: 0.5;
 }
 
 .modal__submit {

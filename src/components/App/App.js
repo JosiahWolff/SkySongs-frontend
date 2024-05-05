@@ -14,14 +14,14 @@ import {
 
 import { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import { getAccessToken, searchTracks } from "../../utils/SpotifyApi";
+import { getAccessToken } from "../../utils/SpotifyApi";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
   const [temp, setTemp] = useState({ temperature: { F: 0, C: 0 } });
   const [location, setLocation] = useState("");
-  const [songs, setSongs] = useState([]);
+  const [songs] = useState([]);
 
   function handleOpenSongPreview() {
     setActiveModal("preview");

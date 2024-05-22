@@ -8,11 +8,13 @@ This project uses a weather API and a spotify API to suggest songs based on the 
   - Create a filter option so its easier to search for more specific songs.
   - Fix/update some visual aspects.
 
-##
+## Preview
+
 ![image](https://github.com/JosiahWolff/SkySongs-frontend/assets/134183204/963d0090-d327-44ff-a98a-663e29c5f3b0)
 
 ![image](https://github.com/JosiahWolff/SkySongs-frontend/assets/134183204/49ae48e3-dfec-4f48-980f-6cb4ab929547)
 
+## Links
 
 -[Github Link](https://github.com/JosiahWolff/SkySongs-frontend)
 

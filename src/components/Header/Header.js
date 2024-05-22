@@ -29,7 +29,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__section">
-        <Link to="/">
+        <Link to="/SkySongs-frontend">
           <img className="header__logo" src={logo} alt="WTWR Logo" />
         </Link>
       </div>

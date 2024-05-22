@@ -44,7 +44,7 @@ function Header() {
           <div className={`dropdown-content ${dropdownOpen ? "show" : ""}`}>
             <Link to="/About">About</Link>
             <Link to="/SearchSpotify">Search</Link>
-            <Link to="/">Home</Link>
+            <Link to="/SkySongs-frontend">Home</Link>
           </div>
         </nav>
       </div>

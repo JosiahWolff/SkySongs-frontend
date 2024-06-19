@@ -72,7 +72,7 @@ function App() {
       />
 
       <Switch>
-        <Route exact path="/SkySongs-frontend">
+        <Route exact path="/">
           <Main
             weatherTemp={temp}
             onSelectCard={handleSelectedCard}

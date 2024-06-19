@@ -29,7 +29,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__section">
-        <Link to="/SkySongs-frontend">
+        <Link to="/">
           <img className="header__logo" src={logo} alt="WTWR Logo" />
         </Link>
       </div>
@@ -44,7 +44,7 @@ function Header() {
           <div className={`dropdown-content ${dropdownOpen ? "show" : ""}`}>
             <Link to="/About">About</Link>
             <Link to="/SearchSpotify">Search</Link>
-            <Link to="/SkySongs-frontend">Home</Link>
+            <Link to="/">Home</Link>
           </div>
         </nav>
       </div>

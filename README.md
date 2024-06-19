@@ -18,6 +18,6 @@ This project uses a weather API and a spotify API to suggest songs based on the 
 
 ## Links
 
--[Github Link](https://github.com/JosiahWolff/SkySongs-frontend)
-
 -[active site](https://josiahwolff.github.io/SkySongs-frontend)
+
+-[Demo](https://www.loom.com/share/d3b8cbbc5f534f5e8e59c54fcb9d9f83?sid=92612c18-7015-483d-ab10-ee3c76c55762)
